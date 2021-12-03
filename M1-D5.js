@@ -12,7 +12,11 @@ ASSIGNMENT RULES
  Write a function called "area" which receives 2 parameters (l1, l2) and calculates the area of the associated rectangle.
 */
 
-/* WRITE YOUR ANSWER HERE */
+const area = function(L1,L2){
+    return (L1*L2)
+}
+console.log(area(6,5))
+
 
 /* EXERCISE 2
  Write a function called "crazySum" which receives two integers as parameters.
