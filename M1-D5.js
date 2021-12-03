@@ -23,20 +23,36 @@ console.log(area(6,5))
  It should return the sum of those two values, but if the two values are the same then it should return their sum multiplied by 3.
 */
 
-/* WRITE YOUR ANSWER HERE */
+const crazySum = function(param1,param2){
+    const result = (param1===param2);
+    if (result){
+        return param1+param2*3
+    }else {
+        return param1 + param2
+    }
+}
+console.log(crazySum(5,5))
 
 /* EXERCISE 3
  Write a function called "crazyDiff" that computes the absolute difference between a given number and 19.
  It should return triple their absolute difference if the given number is greater than 19.
 */
 
-/* WRITE YOUR ANSWER HERE */
+const crazyDiff = function(numberToCompare){
+
+    let difference = (numberToCompare-19)
+    if (difference > 19){
+        return difference *3
+    }
+}
+console.log(crazyDiff(66))
 
 /* EXERCISE 4
  Write a function called "boundary" which accept an integer parameter n and returns true if n is within 20 and 100 (included) or if n it's equal to 400.
 */
+const boundary= function(number){
 
-/* WRITE YOUR ANSWER HERE */
+}
 
 /* EXERCISE 5
  Write a function called "strivify" which accepts a string as a parameter.
