@@ -91,8 +91,9 @@ const check3and7 = function(posNum){
 */
 
 const reverseString = function(strToReverse){
-    reverseString(strToReverse)
+    return strToReverse.split("").reverse("").join("")
 }
+console.log(reverseString("hello"))
 
 /* EXERCISE 8
  Write a function called "upperFirst" which capitalizes the first letter of each word of a given string passed as a parameter.
@@ -100,10 +101,11 @@ const reverseString = function(strToReverse){
 
 const upperFirst = function(capLetters){
     for (let i=0;i<capLetters.length;i++){
-        
+        //return capLetters.split("").charAt(0).toUpperCase().join("")    
+        return capLetters.charAt(0).toUpperCase() + capLetters.slice(1)
     }
-
 }
+console.log(upperFirst("bomb troll hello stan exercice8"))
 
 /* EXERCISE 9
  Write a function called "cutString" which creates a new string without the first and last character of a given string passed as a parameter.
