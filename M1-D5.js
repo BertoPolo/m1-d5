@@ -93,24 +93,28 @@ const check3and7 = function(posNum){
 const reverseString = function(strToReverse){
     return strToReverse.split("").reverse("").join("")
 }
-console.log(reverseString("hello"))
+console.log(reverseString("hello")+ " exercise 7")
 
 /* EXERCISE 8
  Write a function called "upperFirst" which capitalizes the first letter of each word of a given string passed as a parameter.
 */
+/* 
+        split(" ")
+        .charAt(0)
+        .toUpperCase()
+        .join("")           
 
-const upperFirst = function(capLetters){
-    for (let i=0;i<capLetters.length;i++){
-//        return capLetters.split("").charAt(0).toUpperCase().join("")           
-    }
-}
-// console.log(upperFirst("bomb troll hello satan exercice8"))
-
+ console.log(upperFirst("bomb troll hello satan exercice8"))
+ */
 /* EXERCISE 9
  Write a function called "cutString" which creates a new string without the first and last character of a given string passed as a parameter.
 */
 
-/* WRITE YOUR ANSWER HERE */
+const cutString = function(sringWithoutFNL){
+    sringWithoutFNL.slice(0)
+    sringWithoutFNL.slice(sringWithoutFNL.length-1) 
+}
+console.log(cutString("pepiton"))
 
 /* EXERCISE 10
  Write a function called "giveMeRandom" which accepts a number n and returns an array containing n random numbers between 0 and 10.
