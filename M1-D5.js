@@ -110,20 +110,26 @@ console.log(reverseString("hello")+ " exercise 7")
  Write a function called "cutString" which creates a new string without the first and last character of a given string passed as a parameter.
 */
 
-const cutString = function(sringWithoutFNL){
-   let newString = sringWithoutFNL.splice(0,1)
-    newString += sringWithoutFNL.splice(-1,0) 
+/* const cutString = function(sringWithoutFNL){
+    let newString = sringWithoutFNL.splice(0,1)
+     newString += sringWithoutFNL.splice(-1,0) 
 }
-console.log(cutString("pepiton"))
+console.log(cutString("pepiton")) */
 
 /* EXERCISE 10
  Write a function called "giveMeRandom" which accepts a number n and returns an array containing n random numbers between 0 and 10.
 */
 
-const giveMeRandom = function(number){
-
-
+let giveMeRandom = function(times){
+    let value=[]
+    for(let i=1;i<=times;i++){
+       value.push( Math.floor(Math.random()*10) )
+    }
+    return value
+    
 }
+
+console.log(giveMeRandom(4))
 
 /* WHEN YOU ARE FINISHED
  Commit and push the code to your personal GitHub repository; then post the link of your commit on the Homework section of today's Eduflow.
