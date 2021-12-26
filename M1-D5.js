@@ -111,8 +111,8 @@ console.log(reverseString("hello")+ " exercise 7")
 */
 
 const cutString = function(sringWithoutFNL){
-    sringWithoutFNL.slice(0)
-    sringWithoutFNL.slice(sringWithoutFNL.length-1) 
+   let newString = sringWithoutFNL.splice(0,1)
+    newString += sringWithoutFNL.splice(-1,0) 
 }
 console.log(cutString("pepiton"))
 
@@ -120,7 +120,10 @@ console.log(cutString("pepiton"))
  Write a function called "giveMeRandom" which accepts a number n and returns an array containing n random numbers between 0 and 10.
 */
 
-/* WRITE YOUR ANSWER HERE */
+const giveMeRandom = function(number){
+
+
+}
 
 /* WHEN YOU ARE FINISHED
  Commit and push the code to your personal GitHub repository; then post the link of your commit on the Homework section of today's Eduflow.
